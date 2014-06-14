@@ -25,3 +25,18 @@ CONSTANT = 6
 # warning: already initialized constant Constant
 # warning: previous definition of Constant was here
 p CONSTANT
+
+# 2つのオブジェクトが同じかどうか(IDが同じかどうか)を判定する
+str1 = "foo"
+str2 = str1
+str3 = "f" + "o" + "o"
+
+p str1.equal?(str2)
+p str1.equal?(str3)
+
+# オブジェクトの値が等しいかどうかを調べる
+p str1 == str3
+p 1.0 == 1
+
+# オブジェクトの値を厳密に比較する場合
+p 1.0.eql? 1
