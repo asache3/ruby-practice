@@ -3,7 +3,6 @@
   print "Hello Ruby!\n"
 end
 
-
 5.times do |i|
   print i, " loop\n"
 end
