@@ -8,7 +8,7 @@ if b > a
 elsif b == a
   print "b is as big as a\n"
 else
-  print "b is less than a\n"
+  print "b is smaller than a\n"
 end
 
 print "a is bigger than b\n" if a > b
