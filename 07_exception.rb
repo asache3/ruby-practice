@@ -1,15 +1,14 @@
 # 例外処理
-src = open(from)
-
 begin
-  dst = open(to, "w")
-  data = src.read
-  dst.write(data)
-  dst.close
+  x = 10
+  y = "a"
+  p x + y
 rescue => ex
-  print ex.message, "\n"
+  puts(ex.message)
 ensure
-  src.close
+  puts("足し算をしました")
 end
 
+val = "abc"
 n = Integer(val) rescue 0
+p n
